@@ -1,16 +1,5 @@
 require 'sinatra'
-require 'haml'
 
 get '/' do
-  haml :index
+  'Hello world!'
 end
-
-__END__
-
-@@ layout
-%html
-  = yield
-
-@@ index
-%div.title Hello world.
-
